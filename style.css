@@ -1,8 +1,22 @@
 
-nav {
+ .home {
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(to right, rgb(219,220,215), rgb(175,196,252));
+ }
+
+@supports (backdrop-filter: blur(5px)) {
+    .home{
+    background: linear-gradient(to right, 
+        rgba(219, 220, 215, 0.6), 
+        rgba(175, 196, 252, 0.6)
+    );
+    backdrop-filter: blur(5px);
+}}
+
+.other{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(145,165,222);
 }
 
 nav a {
@@ -62,33 +76,19 @@ header {
 }
 #hero-text {
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 32%;
+    left: 17%;
+    width: 400px;
+    height: 300px;
     transform: translate(-50%, -50%);
-    color: rgb(4, 44, 117);
-     font-size: 2rem;
-      font-family: "Montserrat", sans-serif;
-      font-optical-sizing: auto;
-      font-weight:700px;
-      letter-spacing: 1px;
-      box-sizing: border-box; /* Ensure padding/borders are included in width */
-
-
-}
-#hero-text h1{
-    margin-bottom: 5px; 
-}
-#hero-text h2{
-    margin-top: 20px; 
 }
 
 #tagline{
     position: absolute;
-    top: 43%;
+    top: 42%;
     left: 18%;
     transform: translate(-50%, -50%);
-    color:rgb(14, 101, 195);
-    /* color: #1e56bd; */
+   color: #103170;
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -257,28 +257,20 @@ font-optical-sizing: auto;
 
 /* Product Card Styling */
 .product-card {
-    /* background-color: #fff; */
-    /* border: 1px solid #ddd; */
-    /* border-radius: 8px; */
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+ 
     padding: 15px;
     text-align: center;
     transition: transform 0.2s ease;
 }
-/* .product-card img{
-height: 50px;    
-width:150px;
-object-fit: contain; 
-} */
+
 .product-card:hover {
     transform: translateY(-5px);
 }
 
 /* Product Image */
 .product-image {
-    /* height: auto; */
     height: 55px;    
-width:150px;
+width:155px;
 object-fit: cover;
 
 }
