@@ -377,8 +377,6 @@ object-fit: cover;
     margin: 0 5px;
   }
 
-
- 
   header {
     position: relative;
     height: auto;
@@ -386,21 +384,40 @@ object-fit: cover;
 
   #hero {
     height: auto;
-    padding-top: 60px;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  #hero img {
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   #hero-text {
     position: static;
     transform: none;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding: 10px;
+  }
+
+  #hero-text img {
+    width: 60%;
+    height: auto;
+    max-width: 300px;
   }
 
   #tagline {
     position: static;
     transform: none;
-    margin: 10px auto;
     text-align: center;
+    font-size: 16px;
+    margin: 10px auto;
+    padding-bottom: 20px;
   }
 
   #address,
@@ -409,11 +426,6 @@ object-fit: cover;
     text-align: center;
     margin-top: 20px;
   }
-
-  footer {
-    padding-bottom: 30px;
-  }
-
 
 }
 
