@@ -376,6 +376,45 @@ object-fit: cover;
   .social-media a {
     margin: 0 5px;
   }
+
+
+ 
+  header {
+    position: relative;
+    height: auto;
+  }
+
+  #hero {
+    height: auto;
+    padding-top: 60px;
+  }
+
+  #hero-text {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #tagline {
+    position: static;
+    transform: none;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  #address,
+  .social-media {
+    position: static;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  footer {
+    padding-bottom: 30px;
+  }
+
+
 }
 
 
