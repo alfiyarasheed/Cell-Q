@@ -377,7 +377,7 @@ object-fit: cover;
     margin: 0 5px;
   }
 
-  header {
+   header {
     position: relative;
     height: auto;
   }
